@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" class="active"><i class="fa-solid fa-box"></i>Inbox</a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-week"></i>Today</a></li>
+                <li><a href="#"><i class="fa-solid fa-up-long"></i>Upcoming</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrows-to-dot"></i>Important</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>Meetings</a></li>
+                <li><a href="#"><i class="fa-solid fa-trash"></i>Trash</a></li>
+            
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section class="tasks">
+                <h2>Today Tasks</h2>
+                <div class="task-tabs">
+                    <button class="tab-button active" data-filter="all">All</button>
+                    <button class="tab-button" data-filter="important">Important</button>
+                    <button class="tab-button" data-filter="notes">Notes</button>
+                    <button class="tab-button" data-filter="links">Links</button>
+                </div>
+                <ul id="task-list">
+                    
+                </ul>
+                <form id="task-form">
+                    <input type="text" id="task-input" placeholder="Enter new task" required>
+                    <button type="submit"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" id="add-image-button"><i class="fa-solid fa-image"></i></button>
+                </form>
+                <input type="file" id="image-input" style="display: none;">
+            </section>
+            <section class="schedule">
+                <h2>Schedule</h2>
+                <ul>
+                    <li>
+                        <div class="schedule-time">08:00 - 09:00 AM</div>
+                        <div class="schedule-event">
+                            <span>Product Review</span>
+                            <div class="avatars">
+                                <img src="./images/avatar2.png" alt="Avatar 1">
+                                <img src="./images/avatar.png" alt="Avatar 2">
+                                <img src="./images/avatar1.png" alt="Avatar 3">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule-time">10:00 - 11:00 AM</div>
+                        <div class="schedule-event">
+                            <span>Design Meeting</span>
+                            <div class="avatars">
+                                <img src="./images/avatar2.png" alt="Avatar 4">
+                                <img src="./images/avatar3.png" alt="Avatar 5">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="schedule-time">01:00 - 02:00 PM</div>
+                        <div class="schedule-event">
+                            <span>Team Meeting</span>
+                            <div class="avatars">
+                                <img src="./images/avatar4.png" alt="Avatar 6">
+                                <img src="./images/avatar5.png" alt="Avatar 7">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #09233a;
+  color: #ecf0f1;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.sidebar ul li a i {
+  padding: 8px;
+  width: 25px;
+  height: 25px;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  color: #77c7ec;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  padding: 20px;
+  background-color: #1c2c36;
+  box-sizing: border-box;
+}
+
+.tasks {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.schedule {
+  flex: 1;
+  background-color: #335565;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #dbe2e6;
+}
+
+.task-tabs {
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.tab-button {
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(179, 72, 72, 0.1);
+}
+
+.task button {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.task button:hover {
+  background-color: #808080;
+}
+.status-button:hover {
+  background-color: #ccc;
+}
+.task .status-buttons button.active {
+  background-color: green;
+  color: #fff;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.schedule ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.schedule li {
+  margin-bottom: 20px;
+}
+
+.schedule-time {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.schedule-event {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+#task-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#task-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#task-form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#task-form button:hover {
+  background-color: #2980b9;
+}
+
+#add-image-button {
+  background-color: #2ecc71;
+}
+
+#add-image-button:hover {
+  background-color: #27ae60;
+}
